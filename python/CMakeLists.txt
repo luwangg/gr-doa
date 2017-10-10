@@ -32,7 +32,7 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     phase_correct_hier.py
-    twinrx_usrp_source.py
+    #twinrx_usrp_source.py
     average_and_save.py
     compass.py
     save_antenna_calib.py

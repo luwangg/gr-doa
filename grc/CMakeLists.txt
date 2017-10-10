@@ -18,7 +18,7 @@
 # Boston, MA 02110-1301, USA.
 install(FILES
     phase_correct_hier.xml
-    twinrx_usrp_source.xml
+    #twinrx_usrp_source.xml
     doa_autocorrelate.xml
     doa_MUSIC_lin_array.xml
     doa_average_and_save.xml
