@@ -82,33 +82,6 @@
     </param>
   </block>
   <block>
-    <key>variable</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(744, 180)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>gain</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>20</value>
-    </param>
-  </block>
-  <block>
     <key>variable_struct</key>
     <param>
       <key>value10</key>
@@ -277,7 +250,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>value0</key>
-      <value>1000000</value>
+      <value>10000000</value>
     </param>
     <param>
       <key>value9</key>
@@ -285,7 +258,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>value8</key>
-      <value>2**13</value>
+      <value>2**15</value>
     </param>
     <param>
       <key>value1</key>
@@ -304,7 +277,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(824, 112)</value>
+      <value>(576, 108)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -343,7 +316,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(832, 328)</value>
+      <value>(808, 368)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -382,7 +355,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(624, 312)</value>
+      <value>(552, 352)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -461,7 +434,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(184, 224)</value>
+      <value>(160, 264)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -469,19 +442,19 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>gain1</key>
-      <value>"manual"</value>
+      <value>"slow_attack"</value>
     </param>
     <param>
       <key>gain2</key>
-      <value>"manual"</value>
+      <value>"slow_attack"</value>
     </param>
     <param>
       <key>gain3</key>
-      <value>"manual"</value>
+      <value>"slow_attack"</value>
     </param>
     <param>
       <key>gain4</key>
-      <value>"manual"</value>
+      <value>"slow_attack"</value>
     </param>
     <param>
       <key>id</key>
@@ -493,27 +466,27 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>frequency1</key>
-      <value>2400000000</value>
+      <value>input_variables.CenterFreq</value>
     </param>
     <param>
       <key>frequency2</key>
-      <value>2400000000</value>
+      <value>input_variables.CenterFreq</value>
     </param>
     <param>
       <key>manual_gain1</key>
-      <value>gain</value>
+      <value>input_variables.Gain</value>
     </param>
     <param>
       <key>manual_gain2</key>
-      <value>gain</value>
+      <value>input_variables.Gain</value>
     </param>
     <param>
       <key>manual_gain3</key>
-      <value>gain</value>
+      <value>input_variables.Gain</value>
     </param>
     <param>
       <key>manual_gain4</key>
-      <value>gain</value>
+      <value>input_variables.Gain</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -537,11 +510,11 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>bandwidth</key>
-      <value>20000000</value>
+      <value>input_variables.SampleRate</value>
     </param>
     <param>
       <key>samplerate</key>
-      <value>20000000</value>
+      <value>input_variables.SampleRate</value>
     </param>
   </block>
   <block>
