@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.10'?>
+<?grc format='1' created='3.7.11'?>
 <flow_graph>
   <timestamp>Thu Aug 11 16:28:58 2016</timestamp>
   <block>
@@ -339,7 +339,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1008, 328)</value>
+      <value>(1008, 376)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -386,7 +386,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(736, 168)</value>
+      <value>(736, 216)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -437,7 +437,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1016, 192)</value>
+      <value>(1016, 240)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -492,7 +492,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(776, 320)</value>
+      <value>(768, 376)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -509,6 +509,141 @@ Contains all the user-defined variables.</value>
     <param>
       <key>samples_to_average</key>
       <value>input_variables.Samples2Avg</value>
+    </param>
+  </block>
+  <block>
+    <key>iio_fmcomms5_source</key>
+    <param>
+      <key>bbdc</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>buffer_size</key>
+      <value>0x8000</value>
+    </param>
+    <param>
+      <key>ch1_en</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>ch2_en</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>ch3_en</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>ch4_en</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>decimation</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>filter</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(288, 128)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>gain1</key>
+      <value>"slow_attack"</value>
+    </param>
+    <param>
+      <key>gain2</key>
+      <value>"slow_attack"</value>
+    </param>
+    <param>
+      <key>gain3</key>
+      <value>"slow_attack"</value>
+    </param>
+    <param>
+      <key>gain4</key>
+      <value>"slow_attack"</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>iio_fmcomms5_source_0</value>
+    </param>
+    <param>
+      <key>uri</key>
+      <value>ip:192.168.3.2</value>
+    </param>
+    <param>
+      <key>frequency1</key>
+      <value>2400000000</value>
+    </param>
+    <param>
+      <key>frequency2</key>
+      <value>2400000000</value>
+    </param>
+    <param>
+      <key>manual_gain1</key>
+      <value>input_variables.Gain</value>
+    </param>
+    <param>
+      <key>manual_gain2</key>
+      <value>input_variables.Gain</value>
+    </param>
+    <param>
+      <key>manual_gain3</key>
+      <value>input_variables.Gain</value>
+    </param>
+    <param>
+      <key>manual_gain4</key>
+      <value>input_variables.Gain</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>quadrature</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>rfdc</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>rf_port_select</key>
+      <value>"A_BALANCED"</value>
+    </param>
+    <param>
+      <key>bandwidth</key>
+      <value>20000000</value>
+    </param>
+    <param>
+      <key>samplerate</key>
+      <value>20000000</value>
     </param>
   </block>
   <block>
@@ -566,7 +701,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(520, 168)</value>
+      <value>(528, 216)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -587,65 +722,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>num_ports</key>
       <value>input_variables.NumArrayElements</value>
-    </param>
-  </block>
-  <block>
-    <key>twinrx_usrp_source</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>center_freq</key>
-      <value>input_variables.CenterFreq</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>addresses</key>
-      <value>input_variables.RxAddr</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(288, 168)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>gain</key>
-      <value>input_variables.Gain</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>twinrx_usrp_source_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>sources</key>
-      <value>input_variables.NumArrayElements</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>input_variables.SampleRate</value>
     </param>
   </block>
   <connection>
@@ -673,50 +749,50 @@ Contains all the user-defined variables.</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
+    <source_block_id>iio_fmcomms5_source_0</source_block_id>
+    <sink_block_id>phase_correct_hier_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
+    <source_block_id>iio_fmcomms5_source_0</source_block_id>
+    <sink_block_id>phase_correct_hier_1</sink_block_id>
     <source_key>1</source_key>
     <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
+    <source_block_id>iio_fmcomms5_source_0</source_block_id>
+    <sink_block_id>phase_correct_hier_1</sink_block_id>
     <source_key>2</source_key>
     <sink_key>2</sink_key>
   </connection>
   <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
+    <source_block_id>iio_fmcomms5_source_0</source_block_id>
+    <sink_block_id>phase_correct_hier_1</sink_block_id>
     <source_key>3</source_key>
     <sink_key>3</sink_key>
   </connection>
   <connection>
-    <source_block_id>twinrx_usrp_source_0</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
+    <source_block_id>phase_correct_hier_1</source_block_id>
+    <sink_block_id>doa_autocorrelate_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>twinrx_usrp_source_0</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
+    <source_block_id>phase_correct_hier_1</source_block_id>
+    <sink_block_id>doa_autocorrelate_0</sink_block_id>
     <source_key>1</source_key>
     <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>twinrx_usrp_source_0</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
+    <source_block_id>phase_correct_hier_1</source_block_id>
+    <sink_block_id>doa_autocorrelate_0</sink_block_id>
     <source_key>2</source_key>
     <sink_key>2</sink_key>
   </connection>
   <connection>
-    <source_block_id>twinrx_usrp_source_0</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
+    <source_block_id>phase_correct_hier_1</source_block_id>
+    <sink_block_id>doa_autocorrelate_0</sink_block_id>
     <source_key>3</source_key>
     <sink_key>3</sink_key>
   </connection>
