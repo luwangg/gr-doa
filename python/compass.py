@@ -25,6 +25,7 @@ import numpy
 from gnuradio import gr;
 import time
 import random
+import os
 
 from PyQt4 import Qt, QtCore, QtGui
 import PyQt4.Qwt5 as Qwt
@@ -45,6 +46,7 @@ class compass(gr.sync_block, Qwt.QwtPlot):
 
         # Setup overall layouts
         self.this_layout = Qt.QVBoxLayout()
+        self.top_layout = Qt.QGridLayout()
         self.compass_layout = Qt.QGridLayout()
 
         # Setup Dial
@@ -77,8 +79,10 @@ class compass(gr.sync_block, Qwt.QwtPlot):
         font.setBold(True)
         self.label.setFont(font)
         self.label.setAlignment(QtCore.Qt.AlignCenter)
+
         self.this_layout.addWidget(self.label)
-        self.this_layout.addLayout(self.compass_layout)
+        self.this_layout.addLayout(self.top_layout)
+        self.top_layout.addLayout(self.compass_layout,0,0)
 
         # Setup LCD
         lcd_layout = Qt.QGridLayout()
@@ -113,6 +117,18 @@ class compass(gr.sync_block, Qwt.QwtPlot):
         lcd_layout.addItem(spacerBottom,2,1,1,1)
 
         self.label.raise_()
+
+        # Add ADI logo
+        script_dir = os.path.dirname(__file__)
+        path = script_dir+'/logo.png'
+        image_layout = Qt.QGridLayout()
+        pixmap = QtGui.QPixmap(path)
+        label = QtGui.QLabel(self)
+        label.setPixmap(pixmap)
+        label.setAlignment(QtCore.Qt.AlignCenter)
+        image_layout.addWidget(label,2,0)
+        self.top_layout.addLayout(image_layout,1,0)
+
 
         # connect the plot callback signal
         QtCore.QObject.connect(self,

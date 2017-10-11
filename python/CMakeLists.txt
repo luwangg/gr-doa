@@ -39,6 +39,7 @@ GR_PYTHON_INSTALL(
     twinrx_phase_offset_est.py
     findmax_and_save.py DESTINATION ${GR_PYTHON_DIR}/doa
 )
+install(FILES logo.png DESTINATION ${GR_PYTHON_DIR}/doa)
 
 ########################################################################
 # Handle the unit tests
